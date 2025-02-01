@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Tertutup - Pahang Rafting Challenge</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Forum Tertutup</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Laman Utama</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="../backend/logout.php">Log Keluar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="forum-container">
+        <h2>Perbincangan Forum</h2>
+
+        <!-- Borang untuk buat topik baru -->
+        <form action="../backend/post_forum.php" method="POST">
+            <label for="title">Tajuk:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Isi Kandungan:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+
+            <button type="submit">Hantar</button>
+        </form>
+
+        <h3>Senarai Perbincangan</h3>
+        <div id="forum-posts">
+            <?php include '../backend/load_forum.php'; ?>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pahang Rafting Challenge. Hak cipta terpelihara.</p>
+    </footer>
+</body>
+</html>

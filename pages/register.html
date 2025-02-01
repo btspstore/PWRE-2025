@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - Pahang Rafting Challenge 2025</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pendaftaran Peserta</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Laman Utama</a></li>
+                <li><a href="about.html">Tentang Acara</a></li>
+                <li><a href="schedule.html">Jadual & Laluan</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="sponsors.html">Penaja</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register-form">
+        <h2>Daftar Sekarang</h2>
+        <form action="../backend/register.php" method="POST">
+            <label for="name">Nama Penuh:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mel:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Nombor Telefon:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="team">Nama Pasukan:</label>
+            <input type="text" id="team" name="team" required>
+
+            <label for="country">Negara:</label>
+            <input type="text" id="country" name="country" required>
+
+            <button type="submit">Hantar Pendaftaran</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pahang Rafting Challenge. Hak cipta terpelihara.</p>
+    </footer>
+</body>
+</html>
